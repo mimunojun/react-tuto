@@ -1,0 +1,13 @@
+.profile{
+    border: 5px blue solid;
+    border-radius: 20px;
+    text-align: center;
+    margin: 1rem;
+}
+
+.profile.red{
+    border: 5px red solid;
+    border-radius: 20px;
+    text-align: center;
+    margin: 1rem;
+}
