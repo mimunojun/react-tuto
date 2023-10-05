@@ -1,14 +1,20 @@
-import Message from "./Message";
-import Example from "./Example";
-import StyleTest from "./StyleTest";
+import Expression from "./components/Expression";
+import Child from "./components/Child";
 
 function App() {
+    const hello = (str: string) => `hello ${str}`;
+
     return (
-        <div>
-            <Message />
-            <Example />
-            <StyleTest />
-        </div>
+        <>
+            <Child
+                color="red"
+                num={123}
+                fn={hello}
+                bool
+                obj={{ name: "Tom", age: "18" }}
+            />
+            {/* <Child color="red" /> */}
+        </>
     );
 }
 

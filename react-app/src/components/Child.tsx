@@ -1,26 +1,25 @@
-import "../StyleTest.css";
+import "./Child.css";
 import { List } from "./List";
 import React from "react";
 
-console.log;
-const StyleTest = () => {
+type propsObj = {
+    color?: string;
+    num?: number;
+    fn?: (str: string) => string;
+    bool?: boolean;
+    obj?: object;
+};
+
+const StyleTest = (props: propsObj) => {
+    console.log(props);
     return (
-        <React.Fragment>
-            <div className="component">
-                <h3>Hello Component</h3>
-                <List />
-            </div>
-            <div className="component">
-                <h3>Hello Fragment</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquid, hic modi totam repellendus consequatur eum veniam
-                    adipisci atque similique molestiae itaque nisi ipsam
-                    doloremque? Cupiditate nemo harum repellat? Doloremque,
-                    laboriosam.
-                </p>
-            </div>
-        </React.Fragment>
+        <div className={`component ${props.color}`}>
+            <h3>Hello Component</h3>
+            <h3>{props.num}</h3>
+            <h3>{props.fn("af")}</h3>
+            <h3>{props.bool ? "true" : "false"}</h3>
+            <h3>{(props.obj.name, props.obj.age)}</h3>
+        </div>
     );
 };
 
