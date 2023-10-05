@@ -1,7 +1,7 @@
-import Expression from "./components/Expression";
-import Child from "./components/Child";
 import Container from "./components/Container";
 import Profile from "./components/Profile";
+import Hello from "./components/Hello";
+import Bye from "./components/Bye";
 
 const profiles = [
     { name: "John", age: 18, comment: "I'll be a super hero!" },
@@ -9,7 +9,7 @@ const profiles = [
 ];
 
 function App() {
-    const hello = (str: string) => `hello ${str}`;
+    const name = "Suzume";
 
     return (
         <>
@@ -17,6 +17,9 @@ function App() {
                 <Profile {...profiles[0]}></Profile>
                 <Profile {...profiles[1]}></Profile>
             </Container>
+
+            <Hello name={name} />
+            <Bye name={name} />
         </>
     );
 }
