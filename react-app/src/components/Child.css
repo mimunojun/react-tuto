@@ -3,3 +3,11 @@
     margin: 1rem;
     border: blue solid 5px;
 }
+
+.component.red{
+    border: red solid 5px;
+}
+
+.component.green{
+    border: green solid 5px;
+}
