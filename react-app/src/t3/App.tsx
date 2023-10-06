@@ -1,9 +1,9 @@
-import State from "./components/State";
+import MultiState from "./components/MultiState";
 
 const App = () => {
     return (
         <>
-            <State />
+            <MultiState />
         </>
     );
 };
