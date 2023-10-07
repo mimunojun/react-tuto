@@ -19,7 +19,7 @@ const List = ({ todoState }) => {
     return (
         <VStack divider={<StackDivider borderColor="gray.200" />}>
             <div className="container">
-                <p className="title">List.js</p>
+                <p className="text-3xl font-bold underline">List.js</p>
                 {todos.length !== 0 ? (
                     todos.map((todo) => {
                         return (
