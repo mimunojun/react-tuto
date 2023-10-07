@@ -1,3 +1,5 @@
+import { VStack, StackDivider } from "@chakra-ui/react";
+
 const List = ({ todoState }) => {
     const [todos, setTodos] = todoState;
     const completeButton = (id) => {
@@ -15,7 +17,7 @@ const List = ({ todoState }) => {
         );
     };
     return (
-        <>
+        <VStack divider={<StackDivider borderColor="gray.200" />}>
             <div className="container">
                 <p className="title">List.js</p>
                 {todos.length !== 0 ? (
@@ -31,7 +33,7 @@ const List = ({ todoState }) => {
                     <p>no task</p>
                 )}
             </div>
-        </>
+        </VStack>
     );
 };
 
