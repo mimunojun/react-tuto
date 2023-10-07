@@ -20,20 +20,22 @@ const Form = ({ todoState }) => {
     return (
         <>
             <Container>
-                <p className="text-gray-400 font-bold">Form.js</p>
-                <div className="mt-5 ">
-                    <input
-                        type="text"
-                        className="border p-2 rounded-md shadow-inner focus:bg-blue-50"
-                        value={input}
-                        placeholder="enter task"
-                        onChange={(e) => {
-                            setInput(e.target.value);
-                        }}
-                    />
-                    <ButtonComponent fn={buttonClicked} ml="6">
-                        Add Task
-                    </ButtonComponent>
+                <div>
+                    <p className="text-gray-400 font-bold">Form.js</p>
+                    <div className="mt-5 text-center">
+                        <input
+                            type="text"
+                            className="border p-2 rounded-md shadow-inner focus:bg-blue-50 block w-full mb-5"
+                            value={input}
+                            placeholder="enter task"
+                            onChange={(e) => {
+                                setInput(e.target.value);
+                            }}
+                        />
+                        <ButtonComponent fn={buttonClicked} ml="0" addClass="">
+                            Add Task
+                        </ButtonComponent>
+                    </div>
                 </div>
             </Container>
         </>

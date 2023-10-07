@@ -4,4 +4,25 @@
 
 body{
     font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+@layer components {
+    .container {
+        border: lightgrey 1px solid;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 10px 40px;
+        border-radius: 10px;
+    }
+    
+    h1{
+        font-size: 50px;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    h2{
+        font-size: 30px;
+        font-weight: bold;
+    }
 }

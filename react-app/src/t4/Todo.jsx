@@ -13,9 +13,13 @@ const Todo = () => {
             <Container>
                 <p className="font-bold text-gray-400">Todo.js</p>
                 <h1 className="text-5xl font-bold text-center">Reminder</h1>
-                <div>
-                    <List todoState={[todos, setTodos]} />
-                    <Form todoState={[todos, setTodos]} />
+                <div className="flex flex-row">
+                    <div className="basis-1/2">
+                        <List todoState={[todos, setTodos]} />
+                    </div>
+                    <div className="basis-1/2">
+                        <Form todoState={[todos, setTodos]} />
+                    </div>
                 </div>
             </Container>
         </>
