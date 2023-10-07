@@ -1,4 +1,4 @@
-import Child from "./components/Child";
+import Child from "../components/Child";
 
 const StyleTest = () => {
     return <Child />;
