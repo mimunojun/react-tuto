@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import SuzumeApp from "./suzume/SuzumeApp";
+import App from "./t6/App";
 import "./index.css";
 
-ReactDOM.createRoot(document.getElementById("root")).render(<SuzumeApp />);
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
