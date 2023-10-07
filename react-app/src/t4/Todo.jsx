@@ -1,7 +1,7 @@
 import { useState } from "react";
 import List from "./components/List";
 import Form from "./components/Form";
-import "./Todo.css";
+import Container from "./components/Container";
 
 const Todo = () => {
     const [todos, setTodos] = useState([
@@ -10,14 +10,14 @@ const Todo = () => {
     ]);
     return (
         <>
-            <div className="container">
-                <p className="title">Todo.js</p>
-                <h1 style={{ textAlign: "center" }}>Reminder</h1>
+            <Container>
+                <p className="font-bold text-gray-400">Todo.js</p>
+                <h1 className="text-5xl font-bold text-center">Reminder</h1>
                 <div>
                     <List todoState={[todos, setTodos]} />
                     <Form todoState={[todos, setTodos]} />
                 </div>
-            </div>
+            </Container>
         </>
     );
 };
