@@ -1,0 +1,9 @@
+.title{
+    font-weight: bolder;
+}
+
+.container{
+    padding: 1rem;
+    margin: 1rem;
+    border: black 1px solid;
+}
