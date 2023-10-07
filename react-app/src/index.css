@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans', 'M PLUS Rounded 1c';
     box-sizing: border-box;
 }
 
@@ -28,5 +28,9 @@ body{
 
     button{
         @apply bg-gray-200 font-bold p-2 border rounded-full hover:bg-gray-300
+    }
+
+    .gradient{
+        @apply bg-gradient-to-b from-blue-200 to-blue-400
     }
 }
