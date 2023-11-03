@@ -2,35 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;900&family=Noto+Sans:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
+body {
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+        font-family: "M PLUS Rounded 1c", "Noto Sans";
+    }
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-html, body{
-  max-width: 100vw;
-  overflow-x: hidden;
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 body {
-  color: black;
+    color: black;
 }
 
 .container {
-  @apply rounded-md shadow-lg border p-10 m-2
+    max-width: 1366px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0 60px;
+    border: lightgray 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.light {
+    background-color: white;
+    color: #111;
+}
+
+.dark {
+    background-color: #111;
+    color: white;
+}
+
+.theme {
+    transition: 1s all ease;
 }
