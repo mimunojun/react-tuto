@@ -12,7 +12,7 @@ const Home = () => {
                 <p className={styles.desc}>
                     ボカロPとして、作編曲とか動画とかいろいろしています
                 </p>
-                <Button url="/works" text="See My Works" />
+                <Button href="/works" text="See My Works" />
             </div>
             <div className={styles.item}>
                 <Image

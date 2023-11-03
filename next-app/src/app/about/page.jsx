@@ -40,7 +40,7 @@ const About = () => {
                         officia. Autem impedit, incidunt ab sunt consectetur
                         veritatis.
                     </p>
-                    <Button url="/contact" text="Contact" />
+                    <Button href="/contact" text="Contact" />
                 </div>
             </div>
         </div>
