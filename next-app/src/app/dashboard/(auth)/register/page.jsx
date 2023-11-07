@@ -60,7 +60,7 @@ const Register = () => {
                     className={styles.input}
                     required
                 />
-                <button>Register</button>
+                <button className={styles.button}>Register</button>
             </form>
             {err && "Something went wrong"}
             <Button
